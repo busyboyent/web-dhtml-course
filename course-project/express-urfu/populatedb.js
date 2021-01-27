@@ -34,8 +34,8 @@ function contactsCreate(name, cont, picture, cb) {
 }
 
 
-function BookingCreate(persons, status, owner, time, cb) {
-  bookingdetail = {persons: persons}
+function BookingCreate(aud, status, owner, time, cb) {
+  bookingdetail = {aud: aud}
   if (status != false) bookingdetail.status = status
   if (owner != false) bookingdetail.owner = owner
   if (time != false) bookingdetail.time = time
